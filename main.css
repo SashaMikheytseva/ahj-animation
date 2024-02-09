@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.collapse-container {
+  border: 1px solid #eac7c7;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 50px;
+}
+
+.show-btn {
+  background-color: #037cd3;
+  border: 4px solid #0ae8ff61;
+  border-radius: 5px;
+  color: white;
+}
+
+.content {
+  opacity: 0;
+  max-height: 0;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid #8080803b;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+
+}
+
+.visible {
+  max-height: 250px;
+  opacity: 1;
+}
+
+.copy {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
